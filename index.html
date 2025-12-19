@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Durand Auto - Professional Auto Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Password Protection -->
+    <div id="password-overlay" class="password-overlay">
+        <div class="password-container">
+            <h2>Enter Password</h2>
+            <input type="password" id="password-input" placeholder="Enter password">
+            <button onclick="checkPassword()">Submit</button>
+            <p id="error-message" class="error-message"></p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" style="display: none;">
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <h1>Durand Auto</h1>
+                    <p class="tagline">Professional Auto Service</p>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Your Trusted Auto Service Partner</h2>
+                    <p>Quality service, expert technicians, and customer satisfaction guaranteed</p>
+                    <a href="#contact" class="cta-button">Schedule Service</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="service-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🔧</div>
+                        <h3>Oil Changes</h3>
+                        <p>Regular maintenance to keep your engine running smoothly</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🚗</div>
+                        <h3>Brake Service</h3>
+                        <p>Complete brake inspection and repair services</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">⚙️</div>
+                        <h3>Engine Diagnostics</h3>
+                        <p>Advanced computer diagnostics for all makes and models</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🔋</div>
+                        <h3>Battery Service</h3>
+                        <p>Testing, replacement, and charging services</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🛞</div>
+                        <h3>Tire Service</h3>
+                        <p>Rotation, balancing, and new tire installation</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">❄️</div>
+                        <h3>AC Service</h3>
+                        <p>Air conditioning repair and recharge</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Durand Auto</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>At Durand Auto, we pride ourselves on providing exceptional automotive service with honesty and integrity. Our team of certified technicians has years of experience working on all makes and models.</p>
+                        <p>We understand that your vehicle is an important investment, and we treat every car as if it were our own. From routine maintenance to complex repairs, we're here to keep you safely on the road.</p>
+                        <ul class="features">
+                            <li>✓ Certified Technicians</li>
+                            <li>✓ Quality Parts</li>
+                            <li>✓ Competitive Pricing</li>
+                            <li>✓ Customer Satisfaction Guarantee</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>📞 Phone</h3>
+                        <p>(555) 123-4567</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📍 Address</h3>
+                        <p>123 Main Street<br>Your City, ST 12345</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>🕒 Hours</h3>
+                        <p>Mon-Fri: 8:00 AM - 6:00 PM<br>Sat: 9:00 AM - 4:00 PM<br>Sun: Closed</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 Durand Auto. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
