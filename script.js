@@ -1,8 +1,10 @@
 // Password protection functionality
+// Note: Password is stored client-side as requested for a simple static site.
+// For higher security needs, consider server-side authentication.
 function checkPassword() {
     const passwordInput = document.getElementById('password-input');
     const errorMessage = document.getElementById('error-message');
-    const correctPassword = 'auto';
+    const correctPassword = 'auto'; // Site-wide password as requested
     
     if (passwordInput.value === correctPassword) {
         // Hide password overlay
@@ -19,11 +21,13 @@ function checkPassword() {
     }
 }
 
-// Allow Enter key to submit password
+// Initialize page functionality
 document.addEventListener('DOMContentLoaded', function() {
+    // Password protection setup
     const passwordInput = document.getElementById('password-input');
     
     if (passwordInput) {
+        // Allow Enter key to submit password
         passwordInput.addEventListener('keypress', function(event) {
             if (event.key === 'Enter') {
                 checkPassword();
@@ -39,10 +43,8 @@ document.addEventListener('DOMContentLoaded', function() {
             passwordInput.focus();
         }
     }
-});
-
-// Smooth scrolling for navigation links
-document.addEventListener('DOMContentLoaded', function() {
+    
+    // Smooth scrolling for navigation links
     const links = document.querySelectorAll('a[href^="#"]');
     
     links.forEach(link => {
